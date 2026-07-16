@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Japón · Jaime + Marina · Oct 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,300;9..144,0,400;9..144,0,500;9..144,0,600;9..144,1,300;9..144,1,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<style>
+  :root {
+    --paper: #F1E9D6;
+    --paper-2: #E8DFC7;
+    --ink: #1B1F2A;
+    --persimmon: #C84A28;
+    --moss: #5E6B3D;
+    --border: #C4B99B;
+    --border-strong: #A99D80;
+    --muted: #6E6858;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; overflow: hidden; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 14px;
+    line-height: 1.55;
+  }
+  .app {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    height: 100vh;
+  }
+  aside {
+    background: var(--paper);
+    border-right: 1px solid var(--border);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  aside::-webkit-scrollbar { width: 6px; }
+  aside::-webkit-scrollbar-track { background: transparent; }
+  aside::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+  header.masthead {
+    padding: 32px 28px 24px;
+    border-bottom: 1px solid var(--border);
+  }
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "opsz" 96;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 1.0;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 14px;
+  }
+  h1 em {
+    font-style: italic;
+    color: var(--persimmon);
+    font-weight: 300;
+  }
+  .meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .meta span strong { color: var(--ink); font-weight: 500; }
+
+  .summary {
+    padding: 16px 28px;
+    border-bottom: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+  }
+  .stat-value {
+    font-family: 'Fraunces', serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--ink);
+    display: block;
+  }
+  .stat-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+
+  .timeline { padding: 8px 0 24px; flex: 1; }
+  .section-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 18px 28px 10px;
+  }
+
+  .stop {
+    position: relative;
+    display: grid;
+    grid-template-columns: 48px 1fr auto;
+    gap: 14px;
+    align-items: start;
+    padding: 12px 28px;
+    cursor: pointer;
+    transition: background 0.15s;
+    border-left: 3px solid transparent;
+  }
+  .stop:hover { background: var(--paper-2); }
+  .stop.active {
+    background: var(--paper-2);
+    border-left-color: var(--persimmon);
+  }
+  .stop-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--muted);
+    padding-top: 2px;
+  }
+  .stop-body { min-width: 0; }
+  .stop-name {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+  .stop-detail {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 4px;
+    letter-spacing: 0.02em;
+  }
+  .stop-nights {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--ink);
+    padding-top: 4px;
+    text-align: right;
+    white-space: nowrap;
+  }
+  .stop-nights strong {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    display: block;
+    line-height: 1;
+    color: var(--persimmon);
+  }
+  .stop-nights small {
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 4px;
+    display: block;
+  }
+
+  .leg {
+    display: grid;
+    grid-template-columns: 48px 1fr auto;
+    gap: 14px;
+    padding: 6px 28px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+  }
+  .leg-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--border-strong);
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  .booked {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--moss);
+    color: var(--paper);
+    padding: 2px 6px;
+    border-radius: 2px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  .pending {
+    background: transparent;
+    color: var(--muted);
+    border: 1px solid var(--border-strong);
+  }
+
+  .foot {
+    padding: 20px 28px 28px;
+    border-top: 1px solid var(--border);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  main {
+    position: relative;
+    background: var(--paper-2);
+  }
+  #map { width: 100%; height: 100%; }
+  .leaflet-container {
+    background: #E8DFC7;
+    font-family: 'Inter', sans-serif;
+  }
+  .leaflet-control-attribution {
+    background: rgba(241, 233, 214, 0.85) !important;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px !important;
+    color: var(--muted) !important;
+  }
+  .leaflet-control-attribution a { color: var(--persimmon) !important; }
+
+  .marker-pin {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--persimmon);
+    color: var(--paper);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+    font-size: 13px;
+    border: 2px solid var(--paper);
+    box-shadow: 0 2px 6px rgba(27, 31, 42, 0.35);
+    cursor: pointer;
+    transition: transform 0.15s;
+  }
+  .marker-pin:hover { transform: scale(1.15); }
+  .marker-pin.active {
+    background: var(--ink);
+    transform: scale(1.2);
+  }
+  .marker-pin.optional {
+    background: var(--paper);
+    color: var(--muted);
+    border: 2px dashed var(--border-strong);
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    box-shadow: 0 1px 3px rgba(27, 31, 42, 0.2);
+  }
+  .marker-pin.optional:hover { border-color: var(--persimmon); color: var(--persimmon); }
+
+  /* Fullscreen info panel */
+  .info-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(241, 233, 214, 0.96);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 56px 72px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+    z-index: 500;
+    overflow-y: auto;
+    display: flex;
+    align-items: flex-start;
+  }
+  .info-overlay.visible { opacity: 1; pointer-events: auto; }
+  .info-content { max-width: 720px; width: 100%; margin: 0 auto; }
+  .info-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 32px;
+    padding: 14px 22px;
+    background: var(--ink);
+    color: var(--paper);
+    text-decoration: none;
+    border-radius: 3px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    transition: background 0.15s, transform 0.15s;
+  }
+  .info-cta:hover { background: var(--persimmon); transform: translateY(-1px); }
+  .info-cta::after { content: '↗'; font-size: 15px; }
+  .info-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 14px;
+  }
+  .info-title {
+    font-family: 'Fraunces', serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "opsz" 144;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    margin-bottom: 22px;
+  }
+  .info-title em {
+    font-style: italic;
+    color: var(--persimmon);
+    font-weight: 300;
+  }
+  .info-dates {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px;
+    color: var(--muted);
+    margin-bottom: 24px;
+    letter-spacing: 0.02em;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+  .info-notes {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--muted);
+    margin-bottom: 34px;
+  }
+  .info-todo-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--persimmon);
+    margin-bottom: 18px;
+  }
+  .info-todo {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .info-todo li {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.4;
+    padding: 14px 0 14px 24px;
+    position: relative;
+    border-bottom: 1px dotted var(--border);
+  }
+  .info-todo li:last-child { border-bottom: none; }
+  .info-todo li::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 24px;
+    width: 8px;
+    height: 8px;
+    background: var(--persimmon);
+    border-radius: 50%;
+  }
+
+  @media (max-width: 900px) {
+    .app { grid-template-columns: 1fr; grid-template-rows: 40vh 60vh; }
+    aside { border-right: none; border-bottom: 1px solid var(--border); order: 2; }
+    main { order: 1; }
+    h1 { font-size: 32px; }
+    .info-title { font-size: 48px; }
+    .info-todo li { font-size: 16px; }
+    .info-overlay { padding: 32px 28px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="app">
+  <aside>
+    <header class="masthead">
+      <div class="eyebrow">Itinerario · 15 días</div>
+      <h1>Japón <em>en otoño</em></h1>
+      <div class="meta">
+        <span><strong>Jaime</strong> + <strong>Marina</strong></span>
+        <span>03 oct → 17 oct · 2026</span>
+        <span>NRT ✈ NRT</span>
+      </div>
+    </header>
+
+    <div class="summary">
+      <div class="stat">
+        <span class="stat-value" id="stat-nights">14</span>
+        <div class="stat-label">Noches</div>
+      </div>
+      <div class="stat">
+        <span class="stat-value" id="stat-bases">8</span>
+        <div class="stat-label">Paradas</div>
+      </div>
+      <div class="stat">
+        <span class="stat-value" id="stat-booked">1</span>
+        <div class="stat-label">Reservado</div>
+      </div>
+    </div>
+
+    <div class="timeline" id="timeline"></div>
+
+    <div class="foot">
+      Última revisión · <span id="lastupdate"></span>
+    </div>
+  </aside>
+
+  <main>
+    <div id="map"></div>
+    <div class="info-overlay" id="info-overlay">
+      <div class="info-content" id="info-content"></div>
+    </div>
+  </main>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+  const stops = [
+    {
+      n: 1, name: "Tokio", dates: "3 → 5 oct", nights: 2,
+      lat: 35.6938, lng: 139.7033,
+      notes: "Base en Shinjuku. Llegada Narita 9:30. Día suave por jet lag.",
+      todo: [
+        "Shinjuku: Mirador Gob. Metropolitano, Kabukicho, Golden Gai, Omoide Yokocho, Shinjuku Gyoen",
+        "Shibuya: Scramble Crossing, Hachiko, Shibuya Sky, Meiji Jingu, Harajuku",
+        "Asakusa: Senso-ji, Nakamise, Parque Sumida",
+        "Akihabara: Yodobashi, Bic Camera, Mandarake, Animate",
+        "Ginza / Ueno / Ikebukuro / Roppongi (según tiempo)"
+      ],
+      hotel: "Via Inn Shinjuku", booked: true,
+      bookingUrl: "https://www.booking.com/hotel/jp/via-inn-shinjuku.es.html?checkin=2026-10-03&checkout=2026-10-05&group_adults=2&no_rooms=1&group_children=0"
+    },
+    {
+      n: 2, name: "Kawaguchiko", dates: "5 → 6 oct", nights: 1,
+      lat: 35.5171, lng: 138.7518,
+      notes: "Bus directo desde Shinjuku ~1h45. Vistas al Fuji al amanecer.",
+      todo: [
+        "Lago Kawaguchi",
+        "Parque Oishi",
+        "Honcho Street",
+        "Teleférico Kachi Kachi Ropeway",
+        "Onsen público Fuji Yurari"
+      ],
+      hotel: "Por definir", booked: false
+    },
+    {
+      n: 3, name: "Kioto", dates: "6 → 8 oct", nights: 2,
+      lat: 35.0116, lng: 135.7681,
+      notes: "Comprar bono de autobús para moverse. Muchas posibilidades — priorizar en su momento.",
+      todo: [
+        "Día 1 (Higashiyama norte): Ginkaku-ji, Hōnenin, Philosophers' Way, Tenju-an",
+        "Día 2 (Higashiyama sur): Seikan-ji, Sannenzaka/Ninenzaka, Ryozen Kannon, Kōdai-ji, Parque Maruyama, Yasaka Shrine al atardecer, Barrio Gion, Cena Nishiki Market",
+        "Día 3 (Oeste + centro): Atago Jinja, Ninna-ji, Kinkaku-ji (Templo Dorado), Palacio Imperial, Castillo Nijo, Cena Pontocho",
+        "Otros: Fushimi Inari-taisha, Tofuku-ji, Yasaka Pagoda (madrugar), Arashiyama Bamboo Forest, Otagi Nenbutsu-ji"
+      ],
+      hotel: "Machiya por definir", booked: false
+    },
+    {
+      n: 4, name: "Osaka", dates: "8 → 10 oct", nights: 2,
+      lat: 34.6658, lng: 135.5010,
+      notes: "Base en Namba.",
+      todo: [
+        "Dotonbori",
+        "Castillo de Osaka",
+        "Umeda Sky Building"
+      ],
+      hotel: "Por definir", booked: false
+    },
+    {
+      n: 5, name: "Koyasan", dates: "10 → 11 oct", nights: 1,
+      lat: 34.2132, lng: 135.5863,
+      notes: "Alojamiento en monasterio (shukubo). Reserva urgente.",
+      todo: [
+        "Cementerio Okunoin",
+        "Danjo Garan",
+        "Cena shojin-ryori (vegetariana)",
+        "Ceremonia budista matutina"
+      ],
+      hotel: "Shukubo por definir", booked: false
+    },
+    {
+      n: 6, name: "Kanazawa", dates: "11 → 13 oct", nights: 2,
+      lat: 36.5597, lng: 136.6520,
+      notes: "Cultura, jardines y comida de mercado.",
+      todo: [
+        "Jardín Kenrokuen",
+        "Castillo de Kanazawa",
+        "Barrio geisha Higashi Chaya",
+        "Mercado Omicho"
+      ],
+      hotel: "Por definir", booked: false
+    },
+    {
+      n: 7, name: "Takayama", dates: "13 → 16 oct", nights: 3,
+      lat: 36.1461, lng: 137.2522,
+      notes: "Base para Alpes y Shirakawa-go. Día completo en la aldea UNESCO.",
+      todo: [
+        "Casco antiguo Sanmachi Suji",
+        "Morning market (Miyagawa o Jinya-mae)",
+        "Takayama Jinya",
+        "Día completo a Shirakawa-go (gassho-zukuri)"
+      ],
+      hotel: "Ryokan por definir", booked: false
+    },
+    {
+      n: 8, name: "Tokio", dates: "16 → 17 oct", nights: 1,
+      lat: 35.7186, lng: 139.7959,
+      notes: "Última noche cerca del Skyliner a Narita. Vuelo 17 oct 11:10.",
+      todo: [
+        "Últimas compras / paseo",
+        "Cena de despedida (izakaya)",
+        "Skyliner Ueno → Narita ~40 min"
+      ],
+      hotel: "Por definir · Asakusa/Ueno", booked: false
+    }
+  ];
+
+  const optionalStops = [
+    {
+      name: "Nara", label: "N",
+      lat: 34.6851, lng: 135.8048,
+      notes: "Posible excursión de día entre Kioto y Osaka. No reservada como parada — a decidir en su momento.",
+      todo: [
+        "Nara Park (ciervos)",
+        "Templo Todai-ji (Gran Buda)",
+        "Kasuga Taisha",
+        "Isuien Garden"
+      ]
+    }
+  ];
+
+  const legs = [
+    { from: 1, to: 2, mode: "Bus Fujikyu", time: "1h45" },
+    { from: 2, to: 3, mode: "Bus + shinkansen vía Mishima", time: "~3h30" },
+    { from: 3, to: 4, mode: "Shinkansen", time: "15 min" },
+    { from: 4, to: 5, mode: "Nankai + funicular", time: "~2h" },
+    { from: 5, to: 6, mode: "Funicular + tren + Thunderbird", time: "~5h" },
+    { from: 6, to: 7, mode: "Bus Nohi", time: "2h15" },
+    { from: 7, to: 8, mode: "Wide View Hida + shinkansen", time: "~4h" }
+  ];
+
+  const map = L.map('map', { zoomControl: true, scrollWheelZoom: true, attributionControl: true })
+    .setView([36.2, 137.5], 6);
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap · CartoDB',
+    subdomains: 'abcd',
+    maxZoom: 18
+  }).addTo(map);
+
+  const overlay = document.getElementById('info-overlay');
+  const overlayContent = document.getElementById('info-content');
+  let hideTimer = null;
+
+  function showInfo(place, isOptional) {
+    clearTimeout(hideTimer);
+    const eyebrow = isOptional
+      ? `Parada opcional`
+      : `Parada ${place.n} de ${stops.length}${place.booked ? ' · reservado' : ''}`;
+    const meta = isOptional
+      ? `Excursión desde Kioto u Osaka`
+      : `${place.dates}  ·  ${place.nights} ${place.nights === 1 ? 'noche' : 'noches'}`;
+    const cta = place.bookingUrl
+      ? `<a href="${place.bookingUrl.replace(/&/g, '&amp;')}" target="_blank" rel="noopener" class="info-cta">Ver reserva</a>`
+      : '';
+    overlayContent.innerHTML = `
+      <div class="info-eyebrow">${eyebrow}</div>
+      <div class="info-title">${place.name}</div>
+      <div class="info-dates">${meta}</div>
+      <div class="info-notes">${place.notes}</div>
+      <div class="info-todo-title">Qué ver / hacer</div>
+      <ul class="info-todo">${place.todo.map(t => `<li>${t}</li>`).join('')}</ul>
+      ${cta}
+    `;
+    overlay.classList.add('visible');
+  }
+
+  overlay.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+  overlay.addEventListener('mouseleave', () => hideInfo(false));
+
+  function hideInfo(immediate) {
+    clearTimeout(hideTimer);
+    if (immediate) {
+      overlay.classList.remove('visible');
+    } else {
+      hideTimer = setTimeout(() => overlay.classList.remove('visible'), 220);
+    }
+  }
+
+  const markerMap = {};
+  const stopEls = {};
+
+  stops.forEach((s, i) => {
+    const icon = L.divIcon({
+      className: '',
+      html: `<div class="marker-pin" data-n="${s.n}">${s.n}</div>`,
+      iconSize: [32, 32],
+      iconAnchor: [16, 16]
+    });
+    const m = L.marker([s.lat, s.lng], { icon }).addTo(map);
+    m.on('mouseover', () => showInfo(s, false));
+    m.on('mouseout', () => hideInfo(false));
+    m.on('click', () => focusStop(i));
+    markerMap[i] = m;
+  });
+
+  optionalStops.forEach(o => {
+    const icon = L.divIcon({
+      className: '',
+      html: `<div class="marker-pin optional">${o.label}</div>`,
+      iconSize: [32, 32],
+      iconAnchor: [16, 16]
+    });
+    const m = L.marker([o.lat, o.lng], { icon }).addTo(map);
+    m.on('mouseover', () => showInfo(o, true));
+    m.on('mouseout', () => hideInfo(false));
+  });
+
+  const routeCoords = stops.map(s => [s.lat, s.lng]);
+  L.polyline(routeCoords, {
+    color: '#C84A28',
+    weight: 2,
+    opacity: 0.85,
+    dashArray: '6, 8',
+    lineCap: 'round',
+    lineJoin: 'round'
+  }).addTo(map);
+
+  const tl = document.getElementById('timeline');
+  const legByFrom = {};
+  legs.forEach(l => legByFrom[l.from] = l);
+
+  const sectionTitle = document.createElement('div');
+  sectionTitle.className = 'section-title';
+  sectionTitle.textContent = 'Ruta';
+  tl.appendChild(sectionTitle);
+
+  stops.forEach((s, i) => {
+    const el = document.createElement('div');
+    el.className = 'stop';
+    el.dataset.i = i;
+    const bookedBadge = s.booked
+      ? `<span class="booked">reservado</span>`
+      : `<span class="booked pending">pendiente</span>`;
+    el.innerHTML = `
+      <div class="stop-num">${String(s.n).padStart(2, '0')}</div>
+      <div class="stop-body">
+        <div class="stop-name">${s.name}${bookedBadge}</div>
+        <div class="stop-detail">${s.dates}</div>
+        <div class="stop-detail" style="margin-top:2px">${s.hotel}</div>
+      </div>
+      <div class="stop-nights">
+        <strong>${s.nights}</strong>
+        <small>${s.nights === 1 ? 'noche' : 'noches'}</small>
+      </div>
+    `;
+    el.addEventListener('click', () => focusStop(i));
+    el.addEventListener('mouseenter', () => showInfo(s, false));
+    el.addEventListener('mouseleave', () => hideInfo(false));
+    tl.appendChild(el);
+    stopEls[i] = el;
+
+    const leg = legByFrom[s.n];
+    if (leg) {
+      const legEl = document.createElement('div');
+      legEl.className = 'leg';
+      legEl.innerHTML = `
+        <div class="leg-icon">↓</div>
+        <div>${leg.mode}</div>
+        <div>${leg.time}</div>
+      `;
+      tl.appendChild(legEl);
+    }
+  });
+
+  // Optional stops section
+  const optSection = document.createElement('div');
+  optSection.className = 'section-title';
+  optSection.textContent = 'Posibles paradas';
+  optSection.style.marginTop = '20px';
+  tl.appendChild(optSection);
+
+  optionalStops.forEach(o => {
+    const el = document.createElement('div');
+    el.className = 'stop';
+    el.style.opacity = '0.75';
+    el.innerHTML = `
+      <div class="stop-num" style="font-style:italic">${o.label}</div>
+      <div class="stop-body">
+        <div class="stop-name" style="font-style:italic">${o.name}</div>
+        <div class="stop-detail">Excursión opcional</div>
+      </div>
+      <div class="stop-nights">
+        <strong style="color:var(--muted);font-style:italic">?</strong>
+      </div>
+    `;
+    el.addEventListener('mouseenter', () => showInfo(o, true));
+    el.addEventListener('mouseleave', () => hideInfo(false));
+    tl.appendChild(el);
+  });
+
+  function focusStop(i) {
+    Object.values(stopEls).forEach(el => el.classList.remove('active'));
+    stopEls[i].classList.add('active');
+    document.querySelectorAll('.marker-pin').forEach(el => el.classList.remove('active'));
+    const s = stops[i];
+    map.flyTo([s.lat, s.lng], 10, { duration: 1.2 });
+    setTimeout(() => {
+      const pin = document.querySelector(`.marker-pin[data-n="${s.n}"]`);
+      if (pin) pin.classList.add('active');
+    }, 100);
+    stopEls[i].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  document.getElementById('lastupdate').textContent = new Date().toLocaleDateString('es-ES', { day: '2-digit', month: 'short', year: 'numeric' }).toLowerCase();
+  document.getElementById('stat-booked').textContent = stops.filter(s => s.booked).length;
+</script>
+
+</body>
+</html>
