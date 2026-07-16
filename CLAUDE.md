@@ -37,7 +37,7 @@ Priorizan **experiencias culturales tradicionales** por encima de hoteles están
 
 | # | Fechas | Noches | Base | Estado alojamiento |
 |---|---|---|---|---|
-| 1 | 3–5 oct | 2 | Tokio (Shinjuku) | ✅ Via Inn Shinjuku ~210 € |
+| 1 | 3–5 oct | 2 | Tokio (Shinjuku) | 🔶 Via Inn Shinjuku decidido, sin reservar ~210 € |
 | 2 | 5–6 oct | 1 | Kawaguchiko | Pendiente |
 | 3 | 6–8 oct | 2 | Kioto | Pendiente (machiya) |
 | 4 | 8–10 oct | 2 | Osaka | Pendiente |

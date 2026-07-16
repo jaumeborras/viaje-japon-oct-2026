@@ -17,7 +17,7 @@
 - Llegada Narita 9:30. Estimado: hotel sobre las 13:00.
 - Día 3 (viernes): jet lag, tarde suave, paseo por Shinjuku.
 - Día 4 (sábado): día completo Tokio.
-- Alojamiento: **Via Inn Shinjuku** ✅ (~210 € las dos noches)
+- Alojamiento: **Via Inn Shinjuku** 🔶 decidido, sin reservar (~210 € las dos noches)
 
 ### → Tokio → Kawaguchiko · 5 oct
 Bus Fujikyu directo desde Shinjuku (~1h45). Reserva anticipada.

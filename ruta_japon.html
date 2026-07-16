@@ -30,7 +30,7 @@
   }
   .app {
     display: grid;
-    grid-template-columns: 400px 1fr;
+    grid-template-columns: 320px 1fr;
     height: 100vh;
   }
   aside {
@@ -44,7 +44,7 @@
   aside::-webkit-scrollbar-track { background: transparent; }
   aside::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
   header.masthead {
-    padding: 32px 28px 24px;
+    padding: 22px 20px 16px;
     border-bottom: 1px solid var(--border);
   }
   .eyebrow {
@@ -60,11 +60,11 @@
     font-optical-sizing: auto;
     font-variation-settings: "opsz" 96;
     font-weight: 400;
-    font-size: 42px;
+    font-size: 28px;
     line-height: 1.0;
     letter-spacing: -0.02em;
     color: var(--ink);
-    margin-bottom: 14px;
+    margin-bottom: 10px;
   }
   h1 em {
     font-style: italic;
@@ -80,17 +80,43 @@
     gap: 4px;
   }
   .meta span strong { color: var(--ink); font-weight: 500; }
+  .countdown {
+    margin-top: 4px;
+    color: var(--persimmon) !important;
+    font-weight: 500;
+  }
+
+  .leaves {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 450;
+  }
+  .leaf {
+    position: absolute;
+    top: -40px;
+    opacity: 0;
+    will-change: transform, opacity;
+    animation: leafFall linear infinite;
+  }
+  @keyframes leafFall {
+    0% { transform: translateY(-10vh) translateX(0) rotate(0deg); opacity: 0; }
+    8% { opacity: 0.8; }
+    92% { opacity: 0.7; }
+    100% { transform: translateY(110vh) translateX(var(--drift, 40px)) rotate(360deg); opacity: 0; }
+  }
 
   .summary {
-    padding: 16px 28px;
+    padding: 12px 20px;
     border-bottom: 1px solid var(--border);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 16px;
+    gap: 12px;
   }
   .stat-value {
     font-family: 'Fraunces', serif;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 1;
     color: var(--ink);
@@ -105,23 +131,23 @@
     margin-top: 6px;
   }
 
-  .timeline { padding: 8px 0 24px; flex: 1; }
+  .timeline { padding: 4px 0 16px; flex: 1; }
   .section-title {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
+    font-size: 10px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--muted);
-    padding: 18px 28px 10px;
+    padding: 14px 20px 8px;
   }
 
   .stop {
     position: relative;
     display: grid;
-    grid-template-columns: 48px 1fr auto;
-    gap: 14px;
+    grid-template-columns: 32px 1fr auto;
+    gap: 10px;
     align-items: start;
-    padding: 12px 28px;
+    padding: 8px 20px;
     cursor: pointer;
     transition: background 0.15s;
     border-left: 3px solid transparent;
@@ -133,7 +159,7 @@
   }
   .stop-num {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 13px;
+    font-size: 11px;
     color: var(--muted);
     padding-top: 2px;
   }
@@ -141,7 +167,7 @@
   .stop-name {
     font-family: 'Fraunces', serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.2;
     color: var(--ink);
     letter-spacing: -0.01em;
@@ -163,7 +189,7 @@
   }
   .stop-nights strong {
     font-family: 'Fraunces', serif;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
     display: block;
     line-height: 1;
@@ -180,9 +206,9 @@
 
   .leg {
     display: grid;
-    grid-template-columns: 48px 1fr auto;
-    gap: 14px;
-    padding: 6px 28px;
+    grid-template-columns: 32px 1fr auto;
+    gap: 10px;
+    padding: 4px 20px;
     font-family: 'JetBrains Mono', monospace;
     font-size: 10px;
     color: var(--muted);
@@ -216,8 +242,23 @@
     border: 1px solid var(--border-strong);
   }
 
+
+  .firework-particle {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    animation: fwBurst 1s ease-out forwards;
+  }
+  @keyframes fwBurst {
+    0% { transform: translate(0, 0) scale(1); opacity: 1; }
+    100% { transform: translate(var(--dx), var(--dy)) scale(0.3); opacity: 0; }
+  }
+
   .foot {
-    padding: 20px 28px 28px;
+    padding: 14px 20px 20px;
     border-top: 1px solid var(--border);
     font-family: 'JetBrains Mono', monospace;
     font-size: 10px;
@@ -284,7 +325,7 @@
     background: rgba(241, 233, 214, 0.96);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    padding: 56px 72px;
+    padding: 40px 56px;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.25s ease;
@@ -294,43 +335,61 @@
     align-items: flex-start;
   }
   .info-overlay.visible { opacity: 1; pointer-events: auto; }
-  .info-content { max-width: 720px; width: 100%; margin: 0 auto; }
+  .info-content { position: relative; max-width: 560px; width: 100%; margin: 0 auto; }
+  .info-close {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--border-strong);
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .info-close:hover { background: var(--persimmon); color: var(--paper); border-color: var(--persimmon); }
   .info-cta {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    margin-top: 32px;
-    padding: 14px 22px;
+    margin-top: 24px;
+    padding: 11px 18px;
     background: var(--ink);
     color: var(--paper);
     text-decoration: none;
     border-radius: 3px;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     transition: background 0.15s, transform 0.15s;
   }
   .info-cta:hover { background: var(--persimmon); transform: translateY(-1px); }
-  .info-cta::after { content: '↗'; font-size: 15px; }
+  .info-cta::after { content: '↗'; font-size: 13px; }
   .info-eyebrow {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--muted);
-    margin-bottom: 14px;
+    margin-bottom: 10px;
   }
   .info-title {
     font-family: 'Fraunces', serif;
     font-optical-sizing: auto;
     font-variation-settings: "opsz" 144;
     font-weight: 400;
-    font-size: 72px;
+    font-size: 40px;
     line-height: 0.95;
     letter-spacing: -0.03em;
     color: var(--ink);
-    margin-bottom: 22px;
+    margin-bottom: 16px;
   }
   .info-title em {
     font-style: italic;
@@ -339,29 +398,29 @@
   }
   .info-dates {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 15px;
+    font-size: 13px;
     color: var(--muted);
-    margin-bottom: 24px;
+    margin-bottom: 18px;
     letter-spacing: 0.02em;
-    padding-bottom: 24px;
+    padding-bottom: 18px;
     border-bottom: 1px solid var(--border);
   }
   .info-notes {
     font-family: 'Fraunces', serif;
     font-style: italic;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
     color: var(--muted);
-    margin-bottom: 34px;
+    margin-bottom: 24px;
   }
   .info-todo-title {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--persimmon);
-    margin-bottom: 18px;
+    margin-bottom: 12px;
   }
   .info-todo {
     list-style: none;
@@ -370,11 +429,11 @@
   }
   .info-todo li {
     font-family: 'Inter', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     color: var(--ink);
     line-height: 1.4;
-    padding: 14px 0 14px 24px;
+    padding: 10px 0 10px 22px;
     position: relative;
     border-bottom: 1px dotted var(--border);
   }
@@ -382,10 +441,10 @@
   .info-todo li::before {
     content: '';
     position: absolute;
-    left: 6px;
-    top: 24px;
-    width: 8px;
-    height: 8px;
+    left: 4px;
+    top: 17px;
+    width: 6px;
+    height: 6px;
     background: var(--persimmon);
     border-radius: 50%;
   }
@@ -394,14 +453,17 @@
     .app { grid-template-columns: 1fr; grid-template-rows: 40vh 60vh; }
     aside { border-right: none; border-bottom: 1px solid var(--border); order: 2; }
     main { order: 1; }
-    h1 { font-size: 32px; }
-    .info-title { font-size: 48px; }
-    .info-todo li { font-size: 16px; }
-    .info-overlay { padding: 32px 28px; }
+    h1 { font-size: 24px; }
+    .info-title { font-size: 32px; }
+    .info-todo li { font-size: 14px; }
+    .info-overlay { padding: 28px 24px; }
+    .leaves { display: none; }
   }
 </style>
 </head>
 <body>
+
+<div class="leaves" id="leaves"></div>
 
 <div class="app">
   <aside>
@@ -412,6 +474,7 @@
         <span><strong>Jaime</strong> + <strong>Marina</strong></span>
         <span>03 oct → 17 oct · 2026</span>
         <span>NRT ✈ NRT</span>
+        <span id="countdown" class="countdown"></span>
       </div>
     </header>
 
@@ -459,7 +522,7 @@
         "Akihabara: Yodobashi, Bic Camera, Mandarake, Animate",
         "Ginza / Ueno / Ikebukuro / Roppongi (según tiempo)"
       ],
-      hotel: "Via Inn Shinjuku", booked: true,
+      hotel: "Via Inn Shinjuku (decidido, sin reservar)", booked: false,
       bookingUrl: "https://www.booking.com/hotel/jp/via-inn-shinjuku.es.html?checkin=2026-10-03&checkout=2026-10-05&group_adults=2&no_rooms=1&group_children=0"
     },
     {
@@ -583,9 +646,11 @@
   const overlay = document.getElementById('info-overlay');
   const overlayContent = document.getElementById('info-content');
   let hideTimer = null;
+  let pinned = false;
 
-  function showInfo(place, isOptional) {
+  function showInfo(place, isOptional, pin) {
     clearTimeout(hideTimer);
+    if (pin) pinned = true;
     const eyebrow = isOptional
       ? `Parada opcional`
       : `Parada ${place.n} de ${stops.length}${place.booked ? ' · reservado' : ''}`;
@@ -593,9 +658,10 @@
       ? `Excursión desde Kioto u Osaka`
       : `${place.dates}  ·  ${place.nights} ${place.nights === 1 ? 'noche' : 'noches'}`;
     const cta = place.bookingUrl
-      ? `<a href="${place.bookingUrl.replace(/&/g, '&amp;')}" target="_blank" rel="noopener" class="info-cta">Ver reserva</a>`
+      ? `<a href="${place.bookingUrl.replace(/&/g, '&amp;')}" target="_blank" rel="noopener" class="info-cta">${place.booked ? 'Ver reserva' : 'Ver hotel'}</a>`
       : '';
     overlayContent.innerHTML = `
+      <button class="info-close" aria-label="Cerrar" onclick="closeInfo()">×</button>
       <div class="info-eyebrow">${eyebrow}</div>
       <div class="info-title">${place.name}</div>
       <div class="info-dates">${meta}</div>
@@ -609,14 +675,21 @@
 
   overlay.addEventListener('mouseenter', () => clearTimeout(hideTimer));
   overlay.addEventListener('mouseleave', () => hideInfo(false));
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) closeInfo(); });
 
   function hideInfo(immediate) {
+    if (pinned && !immediate) return;
     clearTimeout(hideTimer);
     if (immediate) {
       overlay.classList.remove('visible');
     } else {
       hideTimer = setTimeout(() => overlay.classList.remove('visible'), 220);
     }
+  }
+
+  function closeInfo() {
+    pinned = false;
+    hideInfo(true);
   }
 
   const markerMap = {};
@@ -632,7 +705,7 @@
     const m = L.marker([s.lat, s.lng], { icon }).addTo(map);
     m.on('mouseover', () => showInfo(s, false));
     m.on('mouseout', () => hideInfo(false));
-    m.on('click', () => focusStop(i));
+    m.on('click', () => { focusStop(i); showInfo(s, false, true); });
     markerMap[i] = m;
   });
 
@@ -646,6 +719,7 @@
     const m = L.marker([o.lat, o.lng], { icon }).addTo(map);
     m.on('mouseover', () => showInfo(o, true));
     m.on('mouseout', () => hideInfo(false));
+    m.on('click', () => showInfo(o, true, true));
   });
 
   const routeCoords = stops.map(s => [s.lat, s.lng]);
@@ -686,7 +760,7 @@
         <small>${s.nights === 1 ? 'noche' : 'noches'}</small>
       </div>
     `;
-    el.addEventListener('click', () => focusStop(i));
+    el.addEventListener('click', () => { focusStop(i); showInfo(s, false, true); });
     el.addEventListener('mouseenter', () => showInfo(s, false));
     el.addEventListener('mouseleave', () => hideInfo(false));
     tl.appendChild(el);
@@ -726,12 +800,16 @@
         <strong style="color:var(--muted);font-style:italic">?</strong>
       </div>
     `;
+    el.addEventListener('click', () => showInfo(o, true, true));
     el.addEventListener('mouseenter', () => showInfo(o, true));
     el.addEventListener('mouseleave', () => hideInfo(false));
     tl.appendChild(el);
   });
 
+  let currentIndex = 0;
+
   function focusStop(i) {
+    currentIndex = i;
     Object.values(stopEls).forEach(el => el.classList.remove('active'));
     stopEls[i].classList.add('active');
     document.querySelectorAll('.marker-pin').forEach(el => el.classList.remove('active'));
@@ -744,8 +822,98 @@
     stopEls[i].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
 
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+      e.preventDefault();
+      focusStop(Math.min(currentIndex + 1, stops.length - 1));
+    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      focusStop(Math.max(currentIndex - 1, 0));
+    } else if (e.key === 'Escape') {
+      closeInfo();
+    }
+    checkKonami(e.key);
+  });
+
+  // Easter egg: código Konami → fuegos artificiales (hanabi)
+  const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+  let konamiIndex = 0;
+  function checkKonami(key) {
+    const expected = konamiCode[konamiIndex];
+    const match = expected.length === 1 ? key.toLowerCase() === expected : key === expected;
+    if (match) {
+      konamiIndex++;
+      if (konamiIndex === konamiCode.length) {
+        konamiIndex = 0;
+        triggerFireworks();
+      }
+    } else {
+      konamiIndex = (key === konamiCode[0]) ? 1 : 0;
+    }
+  }
+
+  function spawnFirework(x, y) {
+    const colors = ['#C84A28', '#5E6B3D', '#1B1F2A', '#D4AF37'];
+    for (let i = 0; i < 24; i++) {
+      const p = document.createElement('div');
+      p.className = 'firework-particle';
+      const angle = (i / 24) * 2 * Math.PI;
+      const dist = 60 + Math.random() * 80;
+      p.style.left = x + 'px';
+      p.style.top = y + 'px';
+      p.style.background = colors[Math.floor(Math.random() * colors.length)];
+      p.style.setProperty('--dx', Math.cos(angle) * dist + 'px');
+      p.style.setProperty('--dy', Math.sin(angle) * dist + 'px');
+      document.body.appendChild(p);
+      setTimeout(() => p.remove(), 1000);
+    }
+  }
+
+  function triggerFireworks() {
+    for (let b = 0; b < 4; b++) {
+      setTimeout(() => {
+        const x = 100 + Math.random() * (window.innerWidth - 200);
+        const y = 100 + Math.random() * (window.innerHeight * 0.5);
+        spawnFirework(x, y);
+      }, b * 300);
+    }
+  }
+
   document.getElementById('lastupdate').textContent = new Date().toLocaleDateString('es-ES', { day: '2-digit', month: 'short', year: 'numeric' }).toLowerCase();
   document.getElementById('stat-booked').textContent = stops.filter(s => s.booked).length;
+
+  // Cuenta atrás hasta el viaje
+  const tripStart = new Date('2026-10-03T00:00:00+09:00');
+  const tripEnd = new Date('2026-10-17T23:59:59+09:00');
+  const now = new Date();
+  const countdownEl = document.getElementById('countdown');
+  if (now < tripStart) {
+    const days = Math.ceil((tripStart - now) / 86400000);
+    countdownEl.textContent = `Faltan ${days} días`;
+  } else if (now <= tripEnd) {
+    const dayNum = Math.floor((now - tripStart) / 86400000) + 1;
+    countdownEl.textContent = `Día ${dayNum} de 15 · ¡en Japón!`;
+  } else {
+    countdownEl.textContent = `Viaje completado`;
+  }
+
+  // Hojas de arce cayendo (koyo, el otoño japonés)
+  const leavesContainer = document.getElementById('leaves');
+  const leafGlyphs = ['🍁', '🍂'];
+  for (let i = 0; i < 14; i++) {
+    const leaf = document.createElement('span');
+    leaf.className = 'leaf';
+    leaf.textContent = leafGlyphs[Math.floor(Math.random() * leafGlyphs.length)];
+    const duration = 14 + Math.random() * 12;
+    const delay = Math.random() * duration;
+    const drift = Math.round(Math.random() * 100 - 50) + 'px';
+    leaf.style.left = (Math.random() * 100) + 'vw';
+    leaf.style.fontSize = (14 + Math.random() * 12) + 'px';
+    leaf.style.animationDuration = duration + 's';
+    leaf.style.animationDelay = '-' + delay + 's';
+    leaf.style.setProperty('--drift', drift);
+    leavesContainer.appendChild(leaf);
+  }
 </script>
 
 </body>
