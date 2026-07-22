@@ -46,7 +46,12 @@ Priorizan **experiencias culturales tradicionales** por encima de hoteles están
 | 7 | 13–16 oct | 3 | Takayama | Pendiente (con día completo a Shirakawa-go) |
 | 8 | 16–17 oct | 1 | Tokio (Asakusa/Ueno) | Pendiente |
 
-**Parada opcional (no reservada):** Nara como excursión de día entre Kioto y Osaka.
+**Excursiones de día opcionales (no reservadas, posibilidades):**
+- **Nara** — desde Kioto u Osaka (~40-45 min).
+- **Kobe** — desde Osaka (~20-30 min), cabría como medio día en el bloque de Osaka.
+- **Kamakura** — desde Tokio (~1h). Solo encaja desde Tokio, que va justo; pendiente de decidir cómo hacer hueco.
+
+Ninguna añade noche. Se dejan como marcadores opcionales en el mapa por si se reorganiza el itinerario.
 
 **Nota importante sobre Kioto:** con 2 noches solo hay ~1 día completo real. El usuario tiene contenido para 3 días recopilado, pero prefiere dejarlo como "posibilidades" y decidir prioridades más adelante.
 

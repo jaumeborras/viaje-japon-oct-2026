@@ -80,12 +80,23 @@ Salida del hotel ~7:15. Skyliner ~40 min. Aeropuerto sobre las 8:30 para vuelo 1
 
 ---
 
-## Parada opcional (no reservada)
+## Excursiones de día opcionales (no reservadas)
 
-### Nara — excursión de día entre Kioto y Osaka
+Posibilidades apuntadas por si se reorganiza el itinerario. Ninguna añade noche.
+
+### Nara — desde Kioto u Osaka
 - Kintetsu Nara desde Kioto/Osaka (~40-45 min).
 - Todai-ji (Gran Buda), Nara Park (ciervos), Kasuga Taisha, Isuien Garden.
 - Decidir en su momento si se hace desde Kioto (día 7 o 8 oct) o desde Osaka (día 9 oct).
+
+### Kobe — desde Osaka
+- ~20-30 min desde Osaka. Cabría como medio día en el bloque de Osaka (8-10 oct).
+- Kitano, Nankinmachi (Chinatown), Harborland, Monte Rokko, carne de Kobe.
+
+### Kamakura — desde Tokio
+- ~1h en JR desde Tokio. Solo encaja desde el bloque de Tokio, que va muy justo.
+- Gran Buda (Kotoku-in), Hase-dera, Tsurugaoka Hachimangu, Enoshima.
+- Pendiente de decidir cómo hacer hueco (ver historial de decisiones en CLAUDE.md).
 
 ---
 

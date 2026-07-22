@@ -113,10 +113,35 @@ Contenido por definir. Base: Dotonbori, Castillo de Osaka, Umeda Sky Building.
 
 ## Nara (opcional)
 
+Excursión de día desde Kioto u Osaka (~40-45 min).
+
 - Nara Park (ciervos)
 - Templo Todai-ji (Gran Buda)
 - Kasuga Taisha
 - Isuien Garden
+
+---
+
+## Kobe (opcional)
+
+Excursión de día / medio día desde Osaka (~20-30 min).
+
+- Barrio de Kitano (antiguas casas de mercaderes extranjeros)
+- Nankinmachi (Chinatown)
+- Kobe Harborland y puerto
+- Monte Rokko / cascada Nunobiki (vistas)
+- Carne de Kobe
+
+---
+
+## Kamakura (opcional)
+
+Excursión de día desde Tokio (~1h en JR). Encaja solo desde el bloque de Tokio; queda como posibilidad por si se reorganiza el itinerario.
+
+- Gran Buda de Kamakura (Kotoku-in)
+- Templo Hase-dera
+- Santuario Tsurugaoka Hachimangu
+- Isla de Enoshima
 
 ---
 
