@@ -145,6 +145,17 @@ Excursión de día desde Tokio (~1h en JR). Encaja solo desde el bloque de Tokio
 
 ---
 
+## Miyajima (opcional)
+
+Isla de Itsukushima, junto a Hiroshima (oeste). Excursión de día muy larga desde Osaka (~2h por trayecto: shinkansen a Hiroshima + tranvía/tren + ferry). La más exigente de las opcionales; quizá compensaría más como noche propia si se quisiera hacer bien.
+
+- Santuario de Itsukushima (torii flotante)
+- Monte Misen (teleférico + vistas)
+- Templo Daisho-in
+- Ciervos y Momijidani Park
+
+---
+
 ## Koyasan
 
 - Cementerio Okunoin (visita también al atardecer, muy impresionante)

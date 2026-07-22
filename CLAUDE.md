@@ -50,6 +50,7 @@ Priorizan **experiencias culturales tradicionales** por encima de hoteles están
 - **Nara** — desde Kioto u Osaka (~40-45 min).
 - **Kobe** — desde Osaka (~20-30 min), cabría como medio día en el bloque de Osaka.
 - **Kamakura** — desde Tokio (~1h). Solo encaja desde Tokio, que va justo; pendiente de decidir cómo hacer hueco.
+- **Miyajima** — isla junto a Hiroshima (oeste). ~2h por trayecto desde Osaka; la más exigente como día suelto, valorar como noche propia.
 
 Ninguna añade noche. Se dejan como marcadores opcionales en el mapa por si se reorganiza el itinerario.
 

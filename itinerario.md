@@ -98,6 +98,11 @@ Posibilidades apuntadas por si se reorganiza el itinerario. Ninguna añade noche
 - Gran Buda (Kotoku-in), Hase-dera, Tsurugaoka Hachimangu, Enoshima.
 - Pendiente de decidir cómo hacer hueco (ver historial de decisiones en CLAUDE.md).
 
+### Miyajima — desde Osaka (muy al oeste)
+- Isla de Itsukushima, junto a Hiroshima. ~2h por trayecto (shinkansen + ferry).
+- Torii flotante de Itsukushima, Monte Misen, Daisho-in, ciervos.
+- La más exigente como día suelto; valorar como noche propia si se quiere hacer bien.
+
 ---
 
 ## Aviso importante
