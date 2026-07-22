@@ -5,13 +5,13 @@
 | # | Concepto | Estado | Precio | Enlace |
 |---|---|---|---|---|
 | 1 | Vía Inn Shinjuku (3-5 oct, 2 noches) | 🔶 Decidido, sin reservar | ~210 € | https://www.booking.com/hotel/jp/via-inn-shinjuku.es.html |
-| 2 | Alojamiento Kawaguchiko (5-6 oct) | ⏳ Pendiente | — | — |
-| 3 | Machiya Kioto (6-8 oct) | ⏳ Pendiente | — | — |
-| 4 | Hotel Osaka (8-10 oct) | ⏳ Pendiente | — | — |
-| 5 | Shukubo Koyasan (10-11 oct) | ⏳ Pendiente ⚠️ URGENTE | — | — |
-| 6 | Hotel/ryokan Kanazawa (11-13 oct) | ⏳ Pendiente | — | — |
-| 7 | Ryokan Takayama (13-16 oct) | ⏳ Pendiente | — | — |
-| 8 | Hotel Tokio final (16-17 oct) | ⏳ Pendiente | — | — |
+| 2 | Alojamiento Kawaguchiko (5-6 oct, 1 noche) | ⏳ Pendiente | — | — |
+| 3 | Machiya Kioto (6-10 oct, 4 noches) | ⏳ Pendiente | — | — |
+| 4 | Shukubo Koyasan (10-11 oct, 1 noche) | ⏳ Pendiente ⚠️ URGENTE | — | — |
+| 5 | Alojamiento Kanazawa (11-15 oct, 4 noches) | ⏳ Pendiente | — | — |
+| 6 | Hotel Tokio final (15-17 oct, 2 noches) | ⏳ Pendiente | — | — |
+
+> Osaka ya no tiene noche: se ve de paso entre Koyasan y Kanazawa. Takayama y Shirakawa-go son excursiones de día desde Kanazawa.
 
 ---
 
@@ -30,23 +30,16 @@ Reservar vía **koyasan-shukubo.net/en** o Booking/Agoda.
 ### 2. Alojamiento Kawaguchiko (5 oct)
 Prioridad: vistas al Fuji. Zona norte del lago. Rango 100-180 €/noche.
 
-### 3. Ryokan Takayama (13-16 oct, 3 noches)
-Opciones verificadas dentro del rango:
-- Sumiyoshi Ryokan (histórico junto río Miyagawa)
-- Ryokan Kaminaka (3 min estación, tradicional)
-- Ryokan Asunaro (popular, auténtico)
-- Takayama Zenkoji (temple stay)
-- Irori-yado Hidaya (con irori tradicional)
+### 3. Alojamiento Kanazawa (11-15 oct, 4 noches)
+Base de la zona norte (excursiones a Takayama y Shirakawa-go). Al ser 4 noches, buena para invertir en experiencia:
+- Opción ryokan tradicional en Higashi Chaya.
+- O mezcla ryokan + hotel funcional bien situado (cerca de estación para los buses).
 
-Posibilidad: 2 noches ryokan + 1 noche Zenkoji (temple stay).
-
-### 4. Machiya Kioto (6-8 oct)
+### 4. Machiya Kioto (6-10 oct, 4 noches)
 Buscar en Booking/Airbnb filtrando por "machiya" o "traditional townhouse". Zona: Gion, Higashiyama o cerca del río Kamo. Rango 130-200 €/noche.
 
-### 5-8. Resto (menos urgente)
-- Osaka: cualquier hotel de negocios en Namba/Shinsaibashi (Cross Hotel, Hotel Monterey Grasmere, Namba Oriental).
-- Kanazawa: opcional ryokan + hotel, o dos noches ryokan en Higashi Chaya.
-- Tokio final: Asakusa o Ueno para acceso al Skyliner (Nohga Hotel, Mimaru Ueno, Almont Ueno).
+### 5. Tokio final (15-17 oct, 2 noches)
+Asakusa o Ueno para acceso al Skyliner (Nohga Hotel, Mimaru Ueno, Almont Ueno).
 
 ---
 
@@ -57,22 +50,20 @@ Buscar en Booking/Airbnb filtrando por "machiya" o "traditional townhouse". Zona
 | Bus Shinjuku → Kawaguchiko | 5 oct | Fujikyu Express | Reservar con antelación |
 | Bus Kawaguchiko → Mishima | 6 oct | Fujikyu | Reservar con antelación |
 | Shinkansen Mishima → Kioto | 6 oct | JR | Compra próxima a la fecha |
-| Shinkansen Kioto → Shin-Osaka | 8 oct | JR | Compra próxima a la fecha |
-| Nankai Osaka → Koyasan | 10 oct | Nankai + funicular | Considerar Koyasan World Heritage Ticket |
-| Thunderbird Osaka → Kanazawa | 11 oct | JR | Reservar asiento |
-| Bus Nohi Kanazawa → Takayama | 13 oct | Nohi Bus | Reserva ~1 mes antes, pocas frecuencias |
-| Bus Takayama → Shirakawa-go | 15 oct | Nohi Bus | Ida/vuelta, reservar |
-| Wide View Hida Takayama → Nagoya | 16 oct | JR | Reservar asiento |
-| Shinkansen Nagoya → Tokio | 16 oct | JR | Compra próxima a la fecha |
-| Skyliner Ueno → Narita | 17 oct | Keisei | Se puede comprar en día |
+| Kioto → Koyasan | 10 oct | Namba + Nankai + funicular | Considerar Koyasan World Heritage Ticket |
+| Koyasan → Osaka (de paso) → Kanazawa | 11 oct | Nankai + Thunderbird + Hokuriku Shinkansen (vía Tsuruga) | Reservar asiento Thunderbird/shinkansen |
+| Bus Kanazawa → Takayama (día) | 12-14 oct | Nohi Bus | Ida/vuelta, reservar; pocas frecuencias |
+| Bus Kanazawa → Shirakawa-go (día) | 12-14 oct | Nohi/Hokutetsu | Ida/vuelta, reservar |
+| Hokuriku Shinkansen Kanazawa → Tokio | 15 oct | JR | Directo ~2h30, reservar asiento |
+| Skyliner Ueno → Narita | 17 oct | Keisei | Se puede comprar en el día |
 
 ---
 
 ## Pases a considerar
 
 - **JR Pass nacional:** con esta ruta ya NO compensa (subió mucho en 2023).
-- **Hokuriku Arch Pass:** cubre Tokio-Kanazawa-Osaka vía costa. Valorar si encaja.
-- **Kansai Thru Pass:** posible para movimientos en Kansai (Kioto/Osaka/Nara/Koyasan).
-- Comprar shinkansen sueltos + pases regionales concretos suele salir mejor.
+- **Hokuriku Arch Pass:** cubre Tokio–Kanazawa–Osaka vía costa. **Encaja bien con la ruta nueva** (Kanazawa→Tokio + zona Kansai); valorar seriamente.
+- **Kansai Thru Pass:** posible para movimientos en Kansai (Kioto/Nara/Koyasan).
+- Comprar trenes sueltos + pases regionales concretos suele salir mejor.
 
 Verificar antes de comprar cerca de la fecha.

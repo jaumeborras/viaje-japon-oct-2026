@@ -1,6 +1,6 @@
 # Itinerario · 3–17 octubre 2026
 
-14 noches, 8 paradas. Última actualización tras cambiar Hakone por Kawaguchiko y ampliar Takayama a 3 noches.
+14 noches, 6 paradas. Reorganizado (jul 2026): Kanazawa como base de la zona norte (Takayama y Shirakawa-go como excursiones de día), Kioto a 4 noches con día a Nara, Osaka sin noche (de paso) y Tokio a 4 noches (2+2).
 
 ---
 
@@ -16,7 +16,7 @@
 ### Parada 1 · Tokio (Shinjuku) · 3–5 oct · 2 noches
 - Llegada Narita 9:30. Estimado: hotel sobre las 13:00.
 - Día 3 (viernes): jet lag, tarde suave, paseo por Shinjuku.
-- Día 4 (sábado): día completo Tokio.
+- Día 4 (sábado): día completo Tokio (o excursión a Kamakura).
 - Alojamiento: **Via Inn Shinjuku** 🔶 decidido, sin reservar (~210 € las dos noches)
 
 ### → Tokio → Kawaguchiko · 5 oct
@@ -29,50 +29,36 @@ Bus Fujikyu directo desde Shinjuku (~1h45). Reserva anticipada.
 ### → Kawaguchiko → Kioto · 6 oct
 Bus a Mishima (~1h40) + shinkansen a Kioto (~1h50). Total ~3h30 con transbordo.
 
-### Parada 3 · Kioto · 6–8 oct · 2 noches
-- Solo 1 día completo real (llegada tarde el 6, salida mañana el 8).
+### Parada 3 · Kioto · 6–10 oct · 4 noches
+- ~3 días completos + partes. **Uno de los días es excursión a Nara.**
 - Comprar bono de autobús.
 - Pendiente: machiya en zona Gion/Higashiyama.
+- Contenido en `pois.md` (hay más del que cabe: priorizar en su momento).
 
-### → Kioto → Osaka · 8 oct
-Shinkansen (15 min a Shin-Osaka) o JR/Hankyu (~45 min a Namba directo).
+### → Kioto → Koyasan · 10 oct
+Kioto → Namba (~45 min) + Nankai Koya Line + funicular. Total ~2h45. Existe **Koyasan World Heritage Ticket**.
 
-### Parada 4 · Osaka · 8–10 oct · 2 noches
-- Base en Namba.
-- Un día para Osaka, otro para excursión (**Nara opcional**).
-- Pendiente: hotel funcional zona Namba/Shinsaibashi.
-
-### → Osaka → Koyasan · 10 oct
-Nankai Koya Line desde Namba + funicular. ~2h. Existe **Koyasan World Heritage Ticket** que combina el trayecto.
-
-### Parada 5 · Koyasan · 10–11 oct · 1 noche ⭐
+### Parada 4 · Koyasan · 10–11 oct · 1 noche ⭐
 - **Shukubo (monasterio budista).**
 - Okunoin, Danjo Garan, cena shojin-ryori, ceremonia matutina.
 - **Reserva urgente:** pocas plazas, meses de antelación.
 
 ### → Koyasan → Kanazawa · 11 oct
-Bajada a Osaka (~2h) + Thunderbird Osaka → Kanazawa (~2h30–2h45). Día largo de traslado.
+Baja a Osaka (~2h) — **se ve Osaka de paso** (comida / Dotonbori) — + Thunderbird a Tsuruga + Hokuriku Shinkansen a Kanazawa. Día largo de traslado (~5h en total).
 
-### Parada 6 · Kanazawa · 11–13 oct · 2 noches
-- Kenrokuen, castillo, Higashi Chaya, mercado Omicho, 21st Century Museum.
-- Pendiente: alojamiento (ryokan tradicional o mezcla ryokan + hotel).
+### Parada 5 · Kanazawa · 11–15 oct · 4 noches
+Base de 3 días completos:
+- **Día Kanazawa:** Kenrokuen, castillo, Higashi Chaya, mercado Omicho, 21st Century Museum.
+- **Día Takayama:** bus Nohi ~2h15. Sanmachi Suji, Takayama Jinya, morning market.
+- **Día Shirakawa-go:** bus ~1h15. Aldea UNESCO gassho-zukuri.
+- Pendiente: alojamiento (opción ryokan tradicional en Higashi Chaya).
 
-### → Kanazawa → Takayama · 13 oct
-Bus expreso **Nohi** (~2h15). Reserva con antelación, pocas frecuencias.
+### → Kanazawa → Tokio · 15 oct
+**Hokuriku Shinkansen directo** (~2h30).
 
-### Parada 7 · Takayama · 13–16 oct · 3 noches
-- Base para Alpes.
-- Día 1: casco antiguo Sanmachi Suji, Takayama Jinya.
-- Día 2: **día completo a Shirakawa-go** (bus ~50 min, aldea UNESCO gassho-zukuri).
-- Día 3: morning market, entorno.
-- Pendiente: ryokan tradicional. Posibilidad de temple stay (Takayama Zenkoji).
-
-### → Takayama → Tokio · 16 oct
-**Wide View Hida** a Nagoya (~2h20) + shinkansen a Tokio (~1h40). Total ~4h+.
-
-### Parada 8 · Tokio (Asakusa/Ueno) · 16–17 oct · 1 noche
+### Parada 6 · Tokio (Asakusa/Ueno) · 15–17 oct · 2 noches
 - Zona con acceso directo al Skyliner a Narita (~40 min).
-- Cena de despedida, últimas compras.
+- Zonas pendientes de Tokio, compras, cena de despedida. Opción día a Kamakura.
 - Pendiente: hotel funcional en Ueno o Asakusa.
 
 ### → Tokio → Narita · 17 oct
@@ -80,28 +66,21 @@ Salida del hotel ~7:15. Skyliner ~40 min. Aeropuerto sobre las 8:30 para vuelo 1
 
 ---
 
-## Excursiones de día opcionales (no reservadas)
+## Excursiones de día opcionales (no decididas)
 
-Posibilidades apuntadas por si se reorganiza el itinerario. Ninguna añade noche.
+Posibilidades por si se quieren añadir. Ninguna añade noche.
 
-### Nara — desde Kioto u Osaka
-- Kintetsu Nara desde Kioto/Osaka (~40-45 min).
-- Todai-ji (Gran Buda), Nara Park (ciervos), Kasuga Taisha, Isuien Garden.
-- Decidir en su momento si se hace desde Kioto (día 7 o 8 oct) o desde Osaka (día 9 oct).
-
-### Kobe — desde Osaka
-- ~20-30 min desde Osaka. Cabría como medio día en el bloque de Osaka (8-10 oct).
-- Kitano, Nankinmachi (Chinatown), Harborland, Monte Rokko, carne de Kobe.
+### Kobe — desde la zona de Osaka
+- ~20-30 min. Kitano, Nankinmachi (Chinatown), Harborland, Monte Rokko, carne de Kobe.
+- Difícil de encajar ahora que Osaka no tiene noche (sería recortando otra cosa).
 
 ### Kamakura — desde Tokio
-- ~1h en JR desde Tokio. Solo encaja desde el bloque de Tokio, que va muy justo.
+- ~1h en JR. Cabe en cualquiera de los dos bloques de Tokio.
 - Gran Buda (Kotoku-in), Hase-dera, Tsurugaoka Hachimangu, Enoshima.
-- Pendiente de decidir cómo hacer hueco (ver historial de decisiones en CLAUDE.md).
 
-### Miyajima — desde Osaka (muy al oeste)
-- Isla de Itsukushima, junto a Hiroshima. ~2h por trayecto (shinkansen + ferry).
-- Torii flotante de Itsukushima, Monte Misen, Daisho-in, ciervos.
-- La más exigente como día suelto; valorar como noche propia si se quiere hacer bien.
+### Miyajima — muy al oeste
+- Isla de Itsukushima, junto a Hiroshima. ~2h por trayecto: la más exigente como día suelto.
+- Torii flotante, Monte Misen, Daisho-in. Mejor como noche propia si se quiere hacer bien.
 
 ---
 

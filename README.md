@@ -26,7 +26,7 @@ Planificación del viaje de Jaime y Marina a Japón, del **3 al 17 de octubre de
 
 ## Resumen del viaje
 
-- 14 noches, 8 paradas
+- 14 noches, 6 paradas (Tokio · Kawaguchiko · Kioto · Koyasan · Kanazawa · Tokio)
 - Aterrizaje y salida por Narita
 - Enfoque cultural: ryokan, shukubo, machiya donde tenga sentido
 - Presupuesto: 90-150 €/noche para dos (con flexibilidad en experiencias especiales)

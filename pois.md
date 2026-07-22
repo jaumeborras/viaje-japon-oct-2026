@@ -67,7 +67,7 @@ Todos los barrios interesantes recopilados en las 2 primeras noches y la última
 
 ## Kioto
 
-Contenido organizado por día (Jaime recopiló para 3 días aunque solo tenemos 2 noches en Kioto — a priorizar en su momento).
+Contenido organizado por día. Ahora Kioto son 4 noches (~3 días completos + partes), pero **uno de los días se va a Nara**, así que sigue habiendo más de lo que cabe: priorizar en su momento.
 
 ### General
 - Comprar bono de autobús para moverse por la ciudad
@@ -105,15 +105,15 @@ Contenido organizado por día (Jaime recopiló para 3 días aunque solo tenemos 
 
 ---
 
-## Osaka
+## Osaka (de paso, sin noche)
 
-Contenido por definir. Base: Dotonbori, Castillo de Osaka, Umeda Sky Building.
+Ya no es parada con noche: se pasa por Osaka al ir de Koyasan a Kanazawa. Se puede ver un rato (comida / Dotonbori). Base: Dotonbori, Castillo de Osaka, Umeda Sky Building.
 
 ---
 
-## Nara (opcional)
+## Nara (planificada · uno de los días de Kioto)
 
-Excursión de día desde Kioto u Osaka (~40-45 min).
+Excursión de día desde Kioto (~45 min). Ya dentro del plan.
 
 - Nara Park (ciervos)
 - Templo Todai-ji (Gran Buda)
@@ -124,7 +124,7 @@ Excursión de día desde Kioto u Osaka (~40-45 min).
 
 ## Kobe (opcional)
 
-Excursión de día / medio día desde Osaka (~20-30 min).
+Excursión opcional de medio día desde la zona de Osaka (~20-30 min). Difícil de encajar ahora que Osaka no tiene noche.
 
 - Barrio de Kitano (antiguas casas de mercaderes extranjeros)
 - Nankinmachi (Chinatown)
@@ -136,7 +136,7 @@ Excursión de día / medio día desde Osaka (~20-30 min).
 
 ## Kamakura (opcional)
 
-Excursión de día desde Tokio (~1h en JR). Encaja solo desde el bloque de Tokio; queda como posibilidad por si se reorganiza el itinerario.
+Excursión de día desde Tokio (~1h en JR). Cabe en cualquiera de los dos bloques de Tokio (2 noches al inicio + 2 al final). Opcional.
 
 - Gran Buda de Kamakura (Kotoku-in)
 - Templo Hase-dera
@@ -167,10 +167,16 @@ Isla de Itsukushima, junto a Hiroshima (oeste). Excursión de día muy larga des
 
 ## Kanazawa
 
-Contenido por definir. Base: Kenrokuen, Castillo, Higashi Chaya, mercado Omicho, 21st Century Museum.
+Base de 4 noches y punto de partida para las excursiones a Takayama y Shirakawa-go. Contenido por definir. Base: Kenrokuen, Castillo, Higashi Chaya, mercado Omicho, 21st Century Museum.
 
 ---
 
-## Takayama
+## Takayama (excursión de día desde Kanazawa)
 
-Contenido por definir. Base: Sanmachi Suji, Takayama Jinya, morning market, Shirakawa-go (día completo).
+Bus Nohi ~2h15 por trayecto. Contenido por definir. Base: Sanmachi Suji, Takayama Jinya, morning market.
+
+---
+
+## Shirakawa-go (excursión de día desde Kanazawa)
+
+Aldea UNESCO gassho-zukuri. Bus ~1h15. Casas gassho-zukuri, mirador Shiroyama, casa Wada-ke.

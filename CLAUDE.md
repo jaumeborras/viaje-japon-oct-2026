@@ -33,28 +33,31 @@ Priorizan **experiencias culturales tradicionales** por encima de hoteles están
 
 ---
 
-## Itinerario actual (14 noches, 8 paradas)
+## Itinerario actual (14 noches, 6 paradas)
 
 | # | Fechas | Noches | Base | Estado alojamiento |
 |---|---|---|---|---|
 | 1 | 3–5 oct | 2 | Tokio (Shinjuku) | 🔶 Via Inn Shinjuku decidido, sin reservar ~210 € |
 | 2 | 5–6 oct | 1 | Kawaguchiko | Pendiente |
-| 3 | 6–8 oct | 2 | Kioto | Pendiente (machiya) |
-| 4 | 8–10 oct | 2 | Osaka | Pendiente |
-| 5 | 10–11 oct | 1 | Koyasan | Pendiente (shukubo) ⚠️ URGENTE |
-| 6 | 11–13 oct | 2 | Kanazawa | Pendiente |
-| 7 | 13–16 oct | 3 | Takayama | Pendiente (con día completo a Shirakawa-go) |
-| 8 | 16–17 oct | 1 | Tokio (Asakusa/Ueno) | Pendiente |
+| 3 | 6–10 oct | 4 | Kioto | Pendiente (machiya) · 1 día a Nara |
+| 4 | 10–11 oct | 1 | Koyasan | Pendiente (shukubo) ⚠️ URGENTE |
+| 5 | 11–15 oct | 4 | Kanazawa | Pendiente · base para Takayama + Shirakawa-go |
+| 6 | 15–17 oct | 2 | Tokio (Asakusa/Ueno) | Pendiente |
 
-**Excursiones de día opcionales (no reservadas, posibilidades):**
-- **Nara** — desde Kioto u Osaka (~40-45 min).
-- **Kobe** — desde Osaka (~20-30 min), cabría como medio día en el bloque de Osaka.
-- **Kamakura** — desde Tokio (~1h). Solo encaja desde Tokio, que va justo; pendiente de decidir cómo hacer hueco.
-- **Miyajima** — isla junto a Hiroshima (oeste). ~2h por trayecto desde Osaka; la más exigente como día suelto, valorar como noche propia.
+**Cambio de estructura (julio 2026):** Takayama deja de ser parada con noche y pasa a excursión de día desde Kanazawa (junto con Shirakawa-go). Osaka pierde la noche (se ve de paso entre Koyasan y Kanazawa). Kioto pasa a 4 noches (incluye día a Nara). Tokio pasa a 4 noches repartidas 2+2. Kanazawa → Tokio ahora es shinkansen Hokuriku directo (~2h30).
 
-Ninguna añade noche. Se dejan como marcadores opcionales en el mapa por si se reorganiza el itinerario.
+**Excursiones de día PLANIFICADAS (ya dentro del itinerario, sin noche):**
+- **Nara** — uno de los 4 días de Kioto (~45 min en tren).
+- **Takayama** — desde Kanazawa (bus Nohi ~2h15 por trayecto).
+- **Shirakawa-go** — desde Kanazawa (bus ~1h15).
 
-**Nota importante sobre Kioto:** con 2 noches solo hay ~1 día completo real. El usuario tiene contenido para 3 días recopilado, pero prefiere dejarlo como "posibilidades" y decidir prioridades más adelante.
+**Excursiones de día OPCIONALES (posibilidades, no decididas):**
+- **Kobe** — desde la zona de Osaka (~20-30 min).
+- **Kamakura** — desde Tokio (~1h). Cabe en cualquiera de los dos bloques de Tokio.
+- **Miyajima** — isla junto a Hiroshima (oeste). ~2h por trayecto; la más exigente, mejor como noche propia si se hace.
+- **Osaka** — ya no tiene noche; se ve de paso (comida/Dotonbori) entre Koyasan y Kanazawa.
+
+**Nota importante sobre Kioto:** ahora 4 noches (~3 días completos + partes), uno de ellos dedicado a Nara. Sigue habiendo más contenido del que cabe: priorizar en su momento.
 
 ---
 
@@ -63,22 +66,24 @@ Ninguna añade noche. Se dejan como marcadores opcionales en el mapa por si se r
 | Trayecto | Medio | Tiempo aprox. |
 |---|---|---|
 | Tokio → Kawaguchiko | Bus Fujikyu desde Shinjuku | 1h45 |
-| Kawaguchiko → Kioto | Bus + shinkansen vía Mishima | ~3h30 |
-| Kioto → Osaka | Shinkansen o JR/Hankyu | 15-45 min |
-| Osaka → Koyasan | Nankai Koya Line + funicular | ~2h |
-| Koyasan → Kanazawa | Funicular + tren + Thunderbird vía Osaka | ~5h |
+| Kawaguchiko → Kioto | Bus a Mishima + shinkansen | ~3h30 |
+| Kioto → Koyasan | Kioto → Namba + Nankai Koya + funicular | ~2h45 |
+| Koyasan → Kanazawa | Baja a Osaka (de paso) + Thunderbird/shinkansen vía Tsuruga | ~5h |
+| Kanazawa → Tokio | Hokuriku Shinkansen directo | ~2h30 |
+
+**Excursiones de día desde Kanazawa:**
 | Kanazawa → Takayama | Bus Nohi | 2h15 |
-| Takayama → Tokio | Wide View Hida + shinkansen | ~4h |
+| Kanazawa → Shirakawa-go | Bus Nohi/Hokutetsu | ~1h15 |
 
 ---
 
 ## Prioridades de reserva (por orden)
 
-1. **Shukubo en Koyasan** (11 oct) — pocas plazas, meses de antelación
+1. **Shukubo en Koyasan** (10 oct) — pocas plazas, meses de antelación
 2. **Ryokan / minshuku en Kawaguchiko** (5 oct) — vistas al Fuji
-3. **Ryokan en Takayama** (13-16 oct) — con opción de temple stay (Zenkoji)
-4. **Machiya en Kioto** (6-8 oct)
-5. Hoteles en Osaka, Kanazawa y última noche en Tokio — pueden esperar
+3. **Alojamiento en Kanazawa** (11-15 oct, 4 noches) — base para Takayama y Shirakawa; opción ryokan tradicional
+4. **Machiya en Kioto** (6-10 oct, 4 noches)
+5. Hotel última noche(s) en Tokio (15-17 oct) — puede esperar
 
 ---
 
@@ -94,8 +99,8 @@ Ver `pois.md` para la lista completa por ciudad.
 
 Se ha construido un HTML standalone (`ruta_japon.html`) con:
 - Mapa Leaflet centrado en Japón (tiles CartoDB Positron)
-- 8 marcadores numerados con la ruta
-- Nara como marcador opcional (círculo hueco, borde discontinuo)
+- 6 marcadores numerados con la ruta
+- Excursiones de día como marcadores de círculo hueco (borde discontinuo): Nara, Takayama, Shirakawa-go (planificadas) y Kobe, Kamakura, Miyajima, Osaka (opcionales/de paso)
 - Panel a pantalla completa al hacer hover en cualquier parada, con lista completa de POIs
 - Botón "Ver reserva" en paradas con `bookingUrl` configurada
 - Barra lateral con timeline del itinerario
@@ -118,19 +123,21 @@ Se ha construido un HTML standalone (`ruta_japon.html`) con:
 ## Historial de decisiones
 
 - **Hakone descartado** por presupuesto (ryokan con kaiseki excedía rango). Sustituido por Kawaguchiko.
-- **Kioto reducido de 3 a 2 noches** para poder añadir 1 noche a Takayama (3 en total, con día completo a Shirakawa-go).
-- **Shirakawa-go se hace como excursión de día desde Takayama**, no como noche independiente.
+- **Reorganización (jul 2026):** Kanazawa pasa a ser base de 4 noches para Takayama y Shirakawa-go como excursiones de día. Takayama deja de tener noche propia. Osaka pierde la noche (de paso). Kioto sube a 4 noches (con día a Nara). Tokio sube a 4 noches (2+2).
+- **Shirakawa-go se hace como excursión de día desde Kanazawa** (antes desde Takayama).
+- **Ruta Kanazawa → Tokio:** shinkansen Hokuriku directo (~2h30), sustituye al antiguo Wide View Hida.
 - **Nombre del usuario:** Jaime (Marina es la pareja). No inventar apellidos ni otros datos.
 
 ---
 
 ## Cosas pendientes concretas
 
-1. Cerrar alojamiento en Kawaguchiko (siguiente conversación)
-2. Cerrar shukubo Koyasan (urgente)
-3. Definir contenido de POIs para Osaka, Kanazawa, Takayama (Jaime irá pasando imágenes)
-4. Cuando toque: reservas de shinkansen y buses (Wide View Hida, Nohi, Fujikyu, Romancecar N/A)
-5. Verificar si compensa algún pase regional (Hokuriku Arch Pass podría encajar)
+1. Cerrar shukubo Koyasan (urgente)
+2. Cerrar alojamiento en Kawaguchiko
+3. Cerrar alojamiento en Kanazawa (4 noches, base de la zona)
+4. Definir contenido de POIs para Kanazawa y Takayama (Jaime irá pasando imágenes)
+5. Cuando toque: reservas de trenes y buses (Fujikyu, shinkansen Mishima-Kioto, Nankai Koya, Thunderbird+Hokuriku, Hokuriku Kanazawa-Tokio, buses Nohi a Takayama/Shirakawa)
+6. Verificar si compensa algún pase regional (Hokuriku Arch Pass encaja bien: Tokio–Kanazawa–Osaka; valorar también Kansai para Koyasan/Nara)
 
 ---
 
