@@ -97,13 +97,7 @@ Ver `pois.md` para la lista completa por ciudad.
 
 ## Estado del mapa interactivo
 
-Se ha construido un HTML standalone (`ruta_japon.html`) con:
-- Mapa Leaflet centrado en Japón (tiles CartoDB Positron)
-- 6 marcadores numerados con la ruta
-- Excursiones de día como marcadores de círculo hueco (borde discontinuo): Nara, Takayama, Shirakawa-go (planificadas) y Kobe, Kamakura, Miyajima, Osaka (opcionales/de paso)
-- Panel a pantalla completa al hacer hover en cualquier parada, con lista completa de POIs
-- Botón "Ver reserva" en paradas con `bookingUrl` configurada
-- Barra lateral con timeline del itinerario
+Mapa standalone en `ruta_japon.html` (ver el archivo para el estado actual de marcadores/paneles).
 
 **Cuando cambies el itinerario:** actualiza el array `stops` en el `<script>` del HTML. La estructura de cada parada es:
 
