@@ -372,6 +372,8 @@
   }
   .info-cta:hover { background: var(--persimmon); transform: translateY(-1px); }
   .info-cta::after { content: '↗'; font-size: 13px; }
+  .info-cta-row { display: flex; flex-wrap: wrap; gap: 10px; }
+  .info-cta-row .info-cta { margin-top: 24px; }
   .info-eyebrow {
     font-family: 'JetBrains Mono', monospace;
     font-size: 11px;
@@ -522,8 +524,9 @@
         "Ginza / Ikebukuro / Roppongi (según tiempo)",
         "Opción día a Kamakura (~1h en JR)"
       ],
-      hotel: "Via Inn Shinjuku (decidido, sin reservar)", booked: false,
-      bookingUrl: "https://www.booking.com/hotel/jp/via-inn-shinjuku.es.html?checkin=2026-10-03&checkout=2026-10-05&group_adults=2&no_rooms=1&group_children=0"
+      hotel: "Hotel Kabuki (reservado)", booked: true,
+      bookingUrl: "https://www.booking.com/hotel/jp/kabuki.es.html",
+      address: "1-16-9 Kabuki-cho, Shinjuku-ku, Tokio, 160-0021, Japón"
     },
     {
       n: 2, name: "Kawaguchiko", dates: "5 → 6 oct", nights: 1,
@@ -696,8 +699,11 @@
     const meta = isOptional
       ? `${place.tag || 'Excursión de día'}`
       : `${place.dates}  ·  ${place.nights} ${place.nights === 1 ? 'noche' : 'noches'}`;
-    const cta = place.bookingUrl
+    const bookingCta = place.bookingUrl
       ? `<a href="${place.bookingUrl.replace(/&/g, '&amp;')}" target="_blank" rel="noopener" class="info-cta">${place.booked ? 'Ver reserva' : 'Ver hotel'}</a>`
+      : '';
+    const directionsCta = place.address
+      ? `<a href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(place.address)}" target="_blank" rel="noopener" class="info-cta">Cómo llegar</a>`
       : '';
     overlayContent.innerHTML = `
       <button class="info-close" aria-label="Cerrar" onclick="closeInfo()">×</button>
@@ -707,7 +713,7 @@
       <div class="info-notes">${place.notes}</div>
       <div class="info-todo-title">Qué ver / hacer</div>
       <ul class="info-todo">${place.todo.map(t => `<li>${t}</li>`).join('')}</ul>
-      ${cta}
+      <div class="info-cta-row">${bookingCta}${directionsCta}</div>
     `;
     overlay.classList.add('visible');
   }

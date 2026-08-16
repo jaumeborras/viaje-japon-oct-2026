@@ -4,7 +4,7 @@
 
 | # | Concepto | Estado | Precio | Enlace |
 |---|---|---|---|---|
-| 1 | Vía Inn Shinjuku (3-5 oct, 2 noches) | 🔶 Decidido, sin reservar | ~210 € | https://www.booking.com/hotel/jp/via-inn-shinjuku.es.html |
+| 1 | Hotel Kabuki (3-5 oct, 2 noches) | ✅ Reservado | — | [Booking](https://www.booking.com/hotel/jp/kabuki.es.html) |
 | 2 | Alojamiento Kawaguchiko (5-6 oct, 1 noche) | ⏳ Pendiente | — | — |
 | 3 | Machiya Kioto (6-10 oct, 4 noches) | ⏳ Pendiente | — | — |
 | 4 | Shukubo Koyasan (10-11 oct, 1 noche) | ⏳ Pendiente ⚠️ URGENTE | — | — |
