@@ -38,7 +38,7 @@ Priorizan **experiencias culturales tradicionales** por encima de hoteles están
 | # | Fechas | Noches | Base | Estado alojamiento |
 |---|---|---|---|---|
 | 1 | 3–5 oct | 2 | Tokio (Shinjuku) | ✅ Hotel Kabuki reservado |
-| 2 | 5–6 oct | 1 | Kawaguchiko | Pendiente |
+| 2 | 5–6 oct | 1 | Kawaguchiko | ✅ Tsunagaru Camp Resort QOONEL+ reservado |
 | 3 | 6–10 oct | 4 | Kioto | Pendiente (machiya) · 1 día a Nara |
 | 4 | 10–11 oct | 1 | Koyasan | Pendiente (shukubo) ⚠️ URGENTE |
 | 5 | 11–15 oct | 4 | Kanazawa | Pendiente · base para Takayama + Shirakawa-go |
@@ -80,9 +80,8 @@ Priorizan **experiencias culturales tradicionales** por encima de hoteles están
 ## Prioridades de reserva (por orden)
 
 1. **Shukubo en Koyasan** (10 oct) — pocas plazas, meses de antelación
-2. **Ryokan / minshuku en Kawaguchiko** (5 oct) — vistas al Fuji
-3. **Alojamiento en Kanazawa** (11-15 oct, 4 noches) — base para Takayama y Shirakawa; opción ryokan tradicional
-4. **Machiya en Kioto** (6-10 oct, 4 noches)
+2. **Alojamiento en Kanazawa** (11-15 oct, 4 noches) — base para Takayama y Shirakawa; opción ryokan tradicional
+3. **Machiya en Kioto** (6-10 oct, 4 noches)
 5. Hotel última noche(s) en Tokio (15-17 oct) — puede esperar
 
 ---
@@ -127,11 +126,10 @@ Mapa standalone en `ruta_japon.html` (ver el archivo para el estado actual de ma
 ## Cosas pendientes concretas
 
 1. Cerrar shukubo Koyasan (urgente)
-2. Cerrar alojamiento en Kawaguchiko
-3. Cerrar alojamiento en Kanazawa (4 noches, base de la zona)
-4. Definir contenido de POIs para Kanazawa y Takayama (Jaime irá pasando imágenes)
-5. Cuando toque: reservas de trenes y buses (Fujikyu, shinkansen Mishima-Kioto, Nankai Koya, Thunderbird+Hokuriku, Hokuriku Kanazawa-Tokio, buses Nohi a Takayama/Shirakawa)
-6. Verificar si compensa algún pase regional (Hokuriku Arch Pass encaja bien: Tokio–Kanazawa–Osaka; valorar también Kansai para Koyasan/Nara)
+2. Cerrar alojamiento en Kanazawa (4 noches, base de la zona)
+3. Definir contenido de POIs para Kanazawa y Takayama (Jaime irá pasando imágenes)
+4. Cuando toque: reservas de trenes y buses (Fujikyu, shinkansen Mishima-Kioto, Nankai Koya, Thunderbird+Hokuriku, Hokuriku Kanazawa-Tokio, buses Nohi a Takayama/Shirakawa)
+5. Verificar si compensa algún pase regional (Hokuriku Arch Pass encaja bien: Tokio–Kanazawa–Osaka; valorar también Kansai para Koyasan/Nara)
 
 ---
 

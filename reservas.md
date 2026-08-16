@@ -5,7 +5,7 @@
 | # | Concepto | Estado | Precio | Enlace |
 |---|---|---|---|---|
 | 1 | Hotel Kabuki (3-5 oct, 2 noches) | ✅ Reservado | — | [Booking](https://www.booking.com/hotel/jp/kabuki.es.html) |
-| 2 | Alojamiento Kawaguchiko (5-6 oct, 1 noche) | ⏳ Pendiente | — | — |
+| 2 | Tsunagaru Camp Resort QOONEL+ (5-6 oct, 1 noche) | ✅ Reservado | — | [Booking](https://www.booking.com/hotel/jp/tunagarukiyanpurizotoqoonel.html) |
 | 3 | Machiya Kioto (6-10 oct, 4 noches) | ⏳ Pendiente | — | — |
 | 4 | Shukubo Koyasan (10-11 oct, 1 noche) | ⏳ Pendiente ⚠️ URGENTE | — | — |
 | 5 | Alojamiento Kanazawa (11-15 oct, 4 noches) | ⏳ Pendiente | — | — |

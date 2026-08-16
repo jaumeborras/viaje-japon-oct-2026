@@ -24,7 +24,7 @@ Bus Fujikyu directo desde Shinjuku (~1h45). Reserva anticipada.
 
 ### Parada 2 · Kawaguchiko · 5–6 oct · 1 noche
 - Vistas al Fuji al amanecer (mejor momento).
-- Pendiente: alojamiento (pensión o ryokan con vistas, 100-180 €).
+- Alojamiento: **Tsunagaru Camp Resort QOONEL+** ✅ reservado (glamping con onsen) — 2568-1 Azagawa, Kawaguchi, Fujikawaguchiko-cho, Minamitsuru-gun, Yamanashi, Japón
 
 ### → Kawaguchiko → Kioto · 6 oct
 Bus a Mishima (~1h40) + shinkansen a Kioto (~1h50). Total ~3h30 con transbordo.
