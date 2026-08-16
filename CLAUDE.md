@@ -26,7 +26,7 @@ Este archivo contiene el contexto completo del proyecto para retomar la planific
 Priorizan **experiencias culturales tradicionales** por encima de hoteles estándar:
 - Ryokan tradicional donde tenga sentido (Kawaguchiko, Takayama)
 - Shukubo (monasterio) en Koyasan — reserva más urgente
-- Machiya (casa tradicional) en Kioto
+- Kioto: se optó finalmente por hotel estándar (Agora Kyoto Karasuma) en vez de machiya
 - Hoteles funcionales en ciudades donde el alojamiento aporta poco culturalmente (Tokio, Osaka)
 
 **Presupuesto orientativo:** 90-150 €/noche para dos, con flexibilidad para estirar hasta 200-250 € en experiencias especialmente significativas (ryokan con onsen + kaiseki, shukubo).
@@ -39,7 +39,7 @@ Priorizan **experiencias culturales tradicionales** por encima de hoteles están
 |---|---|---|---|---|
 | 1 | 3–5 oct | 2 | Tokio (Shinjuku) | ✅ Hotel Kabuki reservado |
 | 2 | 5–6 oct | 1 | Kawaguchiko | ✅ Tsunagaru Camp Resort QOONEL+ reservado |
-| 3 | 6–10 oct | 4 | Kioto | Pendiente (machiya) · 1 día a Nara |
+| 3 | 6–10 oct | 4 | Kioto | ✅ Agora Kyoto Karasuma reservado · 1 día a Nara |
 | 4 | 10–11 oct | 1 | Koyasan | Pendiente (shukubo) ⚠️ URGENTE |
 | 5 | 11–15 oct | 4 | Kanazawa | Pendiente · base para Takayama + Shirakawa-go |
 | 6 | 15–17 oct | 2 | Tokio (Asakusa/Ueno) | Pendiente |
@@ -81,8 +81,7 @@ Priorizan **experiencias culturales tradicionales** por encima de hoteles están
 
 1. **Shukubo en Koyasan** (10 oct) — pocas plazas, meses de antelación
 2. **Alojamiento en Kanazawa** (11-15 oct, 4 noches) — base para Takayama y Shirakawa; opción ryokan tradicional
-3. **Machiya en Kioto** (6-10 oct, 4 noches)
-5. Hotel última noche(s) en Tokio (15-17 oct) — puede esperar
+3. Hotel última noche(s) en Tokio (15-17 oct) — puede esperar
 
 ---
 

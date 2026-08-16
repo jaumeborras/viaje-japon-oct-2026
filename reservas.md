@@ -6,7 +6,7 @@
 |---|---|---|---|---|
 | 1 | Hotel Kabuki (3-5 oct, 2 noches) | ✅ Reservado | — | [Booking](https://www.booking.com/hotel/jp/kabuki.es.html) |
 | 2 | Tsunagaru Camp Resort QOONEL+ (5-6 oct, 1 noche) | ✅ Reservado | — | [Booking](https://www.booking.com/hotel/jp/tunagarukiyanpurizotoqoonel.html) |
-| 3 | Machiya Kioto (6-10 oct, 4 noches) | ⏳ Pendiente | — | — |
+| 3 | Agora Kyoto Karasuma (6-10 oct, 4 noches) | ✅ Reservado | — | [Booking](https://www.booking.com/hotel/jp/agora-kyoto-karasuma.es.html) |
 | 4 | Shukubo Koyasan (10-11 oct, 1 noche) | ⏳ Pendiente ⚠️ URGENTE | — | — |
 | 5 | Alojamiento Kanazawa (11-15 oct, 4 noches) | ⏳ Pendiente | — | — |
 | 6 | Hotel Tokio final (15-17 oct, 2 noches) | ⏳ Pendiente | — | — |
@@ -35,8 +35,8 @@ Base de la zona norte (excursiones a Takayama y Shirakawa-go). Al ser 4 noches, 
 - Opción ryokan tradicional en Higashi Chaya.
 - O mezcla ryokan + hotel funcional bien situado (cerca de estación para los buses).
 
-### 4. Machiya Kioto (6-10 oct, 4 noches)
-Buscar en Booking/Airbnb filtrando por "machiya" o "traditional townhouse". Zona: Gion, Higashiyama o cerca del río Kamo. Rango 130-200 €/noche.
+### 4. Kioto — ✅ resuelto
+Agora Kyoto Karasuma reservado (6-10 oct).
 
 ### 5. Tokio final (15-17 oct, 2 noches)
 Asakusa o Ueno para acceso al Skyliner (Nohga Hotel, Mimaru Ueno, Almont Ueno).

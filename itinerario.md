@@ -32,7 +32,7 @@ Bus a Mishima (~1h40) + shinkansen a Kioto (~1h50). Total ~3h30 con transbordo.
 ### Parada 3 · Kioto · 6–10 oct · 4 noches
 - ~3 días completos + partes. **Uno de los días es excursión a Nara.**
 - Comprar bono de autobús.
-- Pendiente: machiya en zona Gion/Higashiyama.
+- Alojamiento: **Agora Kyoto Karasuma** ✅ reservado — 701-1 Myodenjicho, Shimogyo-ku, Kioto, 600-8472, Japón
 - Contenido en `pois.md` (hay más del que cabe: priorizar en su momento).
 
 ### → Kioto → Koyasan · 10 oct

@@ -213,7 +213,11 @@
     font-size: 10px;
     color: var(--muted);
     letter-spacing: 0.02em;
+    text-decoration: none;
   }
+  a.leg { cursor: pointer; transition: color 0.15s; }
+  a.leg:hover { color: var(--persimmon); }
+  a.leg:hover .leg-icon { color: var(--persimmon); }
   .leg-icon {
     display: flex;
     justify-content: center;
@@ -554,7 +558,9 @@
         "DÍA A NARA: Todai-ji (Gran Buda), Nara Park (ciervos), Kasuga Taisha, Isuien Garden (~45 min)",
         "Otros: Fushimi Inari-taisha, Tofuku-ji, Arashiyama Bamboo Forest, Otagi Nenbutsu-ji"
       ],
-      hotel: "Machiya por definir", booked: false
+      hotel: "Agora Kyoto Karasuma (reservado)", booked: true,
+      bookingUrl: "https://www.booking.com/hotel/jp/agora-kyoto-karasuma.es.html",
+      address: "701-1 Myodenjicho, Shimogyo-ku, Kioto, 600-8472, Japón"
     },
     {
       n: 4, name: "Koyasan", dates: "10 → 11 oct", nights: 1,
@@ -815,8 +821,16 @@
 
     const leg = legByFrom[s.n];
     if (leg) {
-      const legEl = document.createElement('div');
+      const destStop = stops[i + 1];
+      const originParam = s.address || `${s.lat},${s.lng}`;
+      const destParam = destStop ? (destStop.address || `${destStop.lat},${destStop.lng}`) : null;
+      const legEl = document.createElement(destParam ? 'a' : 'div');
       legEl.className = 'leg';
+      if (destParam) {
+        legEl.href = `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(originParam)}&destination=${encodeURIComponent(destParam)}&travelmode=transit`;
+        legEl.target = '_blank';
+        legEl.rel = 'noopener';
+      }
       legEl.innerHTML = `
         <div class="leg-icon">↓</div>
         <div>${leg.mode}</div>
